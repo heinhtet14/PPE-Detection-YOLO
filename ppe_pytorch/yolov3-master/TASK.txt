@@ -1,0 +1,60 @@
+
+For PPE detection (pytorch 17 classes SODA dataset)
+
+### ppe_detection_detector.py
+
+please start at function def detector() ==> return x ==> [p1, p2, c, f"{conf:.2f}"]
+
+task! 
+
+1) saparate workers classes to make ID 
+def saparate(x): 
+	# x from function detector
+	# To saparate workers classes
+	'
+	'
+	'
+	'
+
+	x1 = worker
+	x2 = 5classes or anothers
+
+     return x1, x2
+
+2) checking equipments for one worker by IOU, and decision that worker are pass or notpass
+def decision_sorker(x1, x2) 
+	# x_form_saparate = x1 
+	# data_five_classes = x2 
+	
+	
+	for x1_ in x1: 
+	   for x2_ in x2
+	 if IOUx1_ , x2_ ) >= 0.6:
+		 '
+		 '
+		 '
+		 decision_pass = [id_worker,  ]
+		 return decision_pass 
+	 else: 
+		 decision_not_pass = [id_worker, ]
+	   	 return decision_not_pass 
+
+	# note    [id_worker, vest, hardhat, boot, glove]
+	# such as [2, 1, 1, 0, 0, not_pass]
+	# if you want show only vest and hardhat , make conditions for this such as vest=true, hardhat=true, boot=false, glove=flase => [2,1,1,0,0]
+	
+
+3) drawing box
+def draw_box(decision_pass , decision_not_pass ): 
+	for i in decision_pass :
+		#drawing boxx
+		.
+		.
+		.
+	for i in decision_not_pass :
+		#drawing boxx
+		.
+		.
+		.
+	# use Opencv
+		
